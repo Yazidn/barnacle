@@ -1,0 +1,29 @@
+body {margin:0;}
+.movie-preview-container {
+    box-shadow:0px -15px 30px rgba(0,0,0,.1);
+    display:flex;
+    background-color:#fafafa;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    z-index: 1;
+}
+
+.text-info {
+    text-align: left;
+    color:#000;
+    padding:30px;
+    flex:2;
+}
+.poster-info {padding:30px;float:right;}
+.text-info p {margin:10px 0px;font-weight:bold;font-size:14px;}
+.text-info p span {font-weight:lighter;color:#313131;}
+#hide-preview {
+    font-size:20px;
+    border:none;
+    background:none;
+    cursor:pointer;
+    color:#c50303;
+}
+
+#hide-preview:hover {color:#d63a3a;}

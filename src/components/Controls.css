@@ -1,0 +1,56 @@
+.control-bar {
+    box-sizing: content-box;
+    text-align: center;
+    /* position: fixed;
+    height:100%;
+    z-index: 1;
+    right:0;
+    top:0; */
+}
+
+.control-bar button {
+    border:none;
+    /* height:40px; */
+    /* padding:0px 15px; */
+    /* margin: 0px 5px; */
+    /* border-radius:30px; */
+    /* box-shadow: 0px 3px 10px rgba(0,0,0,.3); */
+    margin:8px 5px;
+    cursor:pointer;
+    background:transparent;
+    /* background:#fafafa;
+    height:40px;
+    width:40px;
+    border-radius:50%; */
+    /* display: block; */
+    display:inline-block;
+    font-size: 14px;
+    color:#202020;
+}
+
+
+.control-bar button:hover {
+    color:#4d4d4d;
+}
+
+#importFile {
+    display:none;
+}
+/* .hidden-menu button {
+    background:#3a8efc;
+    color:#fff;
+} */
+
+
+/* .create-button {
+    background:#64a564 !important;
+} */
+
+/* .control-bar button img {
+    height:15px;
+    padding:10px;
+} */
+
+/* .maximized {
+    display:inline-block !important;
+} */

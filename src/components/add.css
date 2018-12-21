@@ -1,0 +1,54 @@
+.add-window {
+    box-sizing: border-box;
+    width:100%;
+    padding:15px 30px;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    background:linear-gradient(to top, #fafafa, rgba(0,0,0,0));
+    text-align: left;
+}
+.add-window input[type="text"] {
+    box-sizing: border-box;
+    border:none;
+    height:40px;
+    width:400px;
+    padding:0px 13px;
+    text-indent: 5px;
+    /* box-shadow:0px 2px 3px rgba(0,0,0,.1); */
+    box-shadow:0px 5px 15px rgba(0,0,0,.2);
+    transition:.3s; 
+    margin-right:25px;
+    display:inline-block;
+    text-align: left;
+
+}
+.add-window button {
+    border:none;
+    margin: 0px 8px;
+    cursor:pointer;
+    background:none;
+}
+.add-buttons-container {
+    text-align: right;
+    float:right;
+    display:inline-block;
+}
+.add-window button:hover {color:#4d4d4d;}
+
+@media only screen and (max-width: 900px) {
+    .add-window * {display:inline-block;}
+    .add-window {
+        text-align:center;
+    }
+    .add-window input[type="text"] {
+        display:block;
+        float: initial;
+    }
+    .add-buttons-container {
+        display:initial;
+        float: initial;
+    }
+
+  }
+  
