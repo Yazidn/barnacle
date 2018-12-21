@@ -11,7 +11,6 @@
     user-select: none;
     border-radius: 5px;
     overflow: hidden;
-    /* margin:3px 0px -2px 5px; */
     margin:5px 5px 2px 5px;
 }
 
@@ -28,19 +27,11 @@
 }
 
 .data-container {
-    /* background:linear-gradient(#000, rgba(0, 0, 0, 0));
-    padding:15px 0px;
-    color:#fff;
-    border-radius:5px; */
     background:linear-gradient(#000, rgba(0, 0, 0, 0));
     padding:15px 0px;
     color:#fff;
-    /* border-radius:5px; */
     height:100%;
     box-sizing: border-box;
-    /* border-radius:30px; */
-    /* transition:.5s; */
-    /* line-height: 1.75; */
     text-align: left;
     
 }
@@ -78,7 +69,6 @@
     width:80%;
     height:100%;
     text-align: center;
-    
     display:none;
     color:#fff;
 }
@@ -92,7 +82,6 @@
     height:12px;
     width:12px;
     border-radius:50%;
-    /* opacity:0; */
     display:none;
     animation:bouncing 2s infinite linear;
     cursor:pointer;
@@ -112,138 +101,28 @@
 }
 
 .edit-activated-or-not {
-    /* opacity:1; */
     display:block;
 }
 
 .card-edit {
     border:none;
-    /* height:30px; */
-    /* width:70px; */
     padding: 8px 15px;
     border-radius:20px;
-    /* color:#fff;
-    background:rgba(255,255,255,.1);
-    border:1px solid #fff; */
     background:#000;
     color:#fff;
     cursor:pointer;
     margin-top:20px;
-    /* opacity:0; */
     box-shadow: 0px 3px 10px rgba(0,0,0,.3);
 }
 
 
 .card:hover > .data-container > .card-next-episode-number-container input{
-    /* height:250px; */
-    /* box-shadow: 0px 5px 15px rgba(0, 0, 0, .3); */
-    /* border-color:#7e7e7e; */
     color:#000;
 }
 
 .card:hover > .data-container {
-    /* background:#fff; */
     background: #fafafa;
     color:#000;
 }
 
 .card:hover > .data-container > .editor {opacity:1;}
-/* .data-container:hover > .card-edit {
-    opacity:1;
-} */
-
-/* .card button img {
-    height:15px;
-    
-} */
-
-/* .card-edit:hover {
-    background:rgba(255,255,255,1);
-    color:#616161;
-} */
-
-/* .card {
-    background:#f0f0f0;
-    height:200px;
-    width: 150px;
-    margin:10px;
-    text-align:center;
-    display:inline-block;
-    position: relative;
-
-    box-shadow: 0px 3px 10px rgba(0,0,0,.3);
-
-}
-
-
-.card-title {
-    font-size:14px;
-    font-weight:bold;
-    color:#f0f0f0;
-
-}
-
-.card-edit {
-    opacity: 0;
-    transition:.3s;
-}
-
-.card:hover > .card-edit {
-    opacity:1;
-}
-
-
-
-.not-opaque {
-    opacity: 1;
-}
-
-.data-container {
-    background: linear-gradient(to bottom, #141414, rgba(0, 0, 0, 0));
-    width:100%;
-    margin:auto;
-    color:#fff;
-    padding:10px;
-    transition:.3s;
-}
-
-.card-next-episode-number {
-    font-size:40px;
-    font-weight:bold;
-    
-}
-
-.card-season {
-    font-size:14px;
-}
-
-.card-increment-episode-button{background: #74a774;}
-.card-delete-button {
-    border:none;
-    background: #c74f4f;
-    position: absolute;
-    top:-5px;
-    right:-5px;
-    height:15px;
-    width:15px;
-    border-radius:50%;
-    opacity:0;
-    animation:bouncing 1s infinite linear;
-}
-
-@keyframes bouncing {
-    0% {
-        transform:scale(1);
-    }
-    50% {
-        transform:scale(1.1);
-        background:red;
-    }
-    101%{
-        transform:scale(1);
-    }
-}
-
-.edit-activated-or-not {
-    opacity:1;
-} */
