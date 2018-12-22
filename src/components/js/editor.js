@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './editor.css';
+import '../css/editor.css';
 
 class Editor extends Component {
     render() {

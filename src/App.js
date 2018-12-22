@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import Card from './components/card';
-import Add from './components/add';
-import Controls from './components/Controls';
+import Card from './components/js/card';
+import Add from './components/js/add';
+import Controls from './components/js/Controls';
 
 class App extends Component {
   constructor() {
@@ -18,11 +18,11 @@ class App extends Component {
     };
   }
   
-componentWillMount() {
-  localStorage.getItem('list') && this.setState({
-    list: JSON.parse(localStorage.getItem('list'))
-  })
-}
+  componentWillMount() {
+    localStorage.getItem('list') && this.setState({
+      list: JSON.parse(localStorage.getItem('list'))
+    })
+  }
 
   componentWillUpdate(nextProps, nextState) { localStorage.setItem('list', JSON.stringify(nextState.list))}
   addOnClick = () => {this.setState({addIsHidden: false})}
@@ -34,8 +34,7 @@ componentWillMount() {
           title: this.state.info.Title,
           poster: this.state.info.Poster,
           nextEpisode: 1,
-          currentSeason: 1,
-          backColor: this.state.backColorContent
+          currentSeason: 1
         }]
       })
 
@@ -43,8 +42,7 @@ componentWillMount() {
         inputContent: '',
         posterInputContent: '',
         epNumberContent: '',
-        seasonsContent: '',
-        backColorContent: ''
+        seasonsContent: ''
       })
 
       this.setState({addIsHidden: true})
@@ -58,10 +56,6 @@ componentWillMount() {
     this.setState({
       inputContent: event.target.value
     })
-  }
-  
-  posterInputOnChange = (event) => {
-    this.setState({posterInputContent: event.target.value})
   }
 
   incrementEpOnClick = (event) => {
@@ -129,19 +123,6 @@ componentWillMount() {
 
   }
 
-  currentSeasonInputOnChange = (event) => {this.setState({currentSeasonContent: event.target.value})}
-
-  setColor = (event) => {
-    let colorDivArray = document.querySelectorAll('.color-div');
-    colorDivArray.forEach((element) => {
-      element.classList.remove('selected');
-    })
-    event.target.classList.add('selected');
-    this.setState({
-      backColorContent: event.target.style.backgroundColor
-    })
-  }
-
   cardDeleteOnClick = (event) => {
     let arrayWithoutDeletedItem = this.state.list;
     let indexToDelete;
@@ -179,8 +160,6 @@ componentWillMount() {
       }
       
     }}
-
-  controlsBarMaximize = (event) => {event.target.parentNode.children[1].classList.toggle('maximized');}
 
   connectToServer = (titleData, ev = false) => {  
     ev.persist();
@@ -221,6 +200,7 @@ componentWillMount() {
             event.target.parentNode.children[0].style.opacity = '1';
           }
   }
+  
   customepnmbr = (event) => {
     event.target.parentNode.children[1].style.display = 'inline-block';
     event.target.parentNode.children[1].value = event.target.textContent;

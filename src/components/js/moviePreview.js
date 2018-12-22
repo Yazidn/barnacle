@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './moviePreview.css';
+import '../css/moviePreview.css';
 
 class MoviePreview extends Component {
     render() {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './add.css';
+import '../css/add.css';
 import MoviePreview from './moviePreview';
 import TitlePreviewer from './titlePreviewer';
 

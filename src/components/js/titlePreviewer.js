@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './titlePreviewer.css';
+import '../css/titlePreviewer.css';
 
 class TitlePreviewer extends Component {
     render() {
