@@ -1,13 +1,13 @@
-## Barnacle
+# Barnacle
+A simple application that tracks your shows.
 
-**Barnacle** is a simple web application that tracks your shows for you.
-
+## Screenshot
 ![alt text](https://i.imgur.com/zQESxaU.png)
+## User Interface
+The four buttons at the top of the page are everything you'll be using, Creating or adding a show, Deleting shows, Backing up your shows list, Restoring a previously backed up shows list.
 
 ## Technical details
-
-**Barnacle** uses localStorage to store its data, it doesn't have a backend server and a database, data is saved in the browser's session, Although you can always backup your data as a json file and restore it later when you want.
+It uses localStorage to store its data, It doesn't have a backend server or a database, The data is saved in the browser session, Although you can always backup your data as a json file and restore it whenever you want.
 
 ## Developers
-
-**Barnacle** is written in React.js
+It is written in React.js
