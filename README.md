@@ -1,5 +1,5 @@
 # Barnacle
-A simple application that tracks your shows.
+A simple application that tracks your shows. In other words, it keeps track of what episode you need to watch next, and what season.
 
 ## Screenshot
 ![alt text](https://i.imgur.com/zQESxaU.png)
