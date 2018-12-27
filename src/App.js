@@ -19,12 +19,12 @@ class App extends Component {
   }
   
   componentWillMount() {
-    localStorage.getItem('list') && this.setState({
-      list: JSON.parse(localStorage.getItem('list'))
+    localStorage.getItem('barnacle') && this.setState({
+      list: JSON.parse(localStorage.getItem('barnacle'))
     })
   }
 
-  componentWillUpdate(nextProps, nextState) { localStorage.setItem('list', JSON.stringify(nextState.list))}
+  componentWillUpdate(nextProps, nextState) { localStorage.setItem('barnacle', JSON.stringify(nextState.list))}
   addOnClick = () => {this.setState({addIsHidden: false})}
 
   createNewCardOnClick = () => {
